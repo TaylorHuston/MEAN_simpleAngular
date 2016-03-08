@@ -25,27 +25,34 @@
 <body class="container" ng-app="firstApp" ng-controller="mainController as main">
 
   <div class="jumbotron">
+    <div class="form-group">
+      <label>Message</label>
+      <input type="text" class="form-control" ng-model="main.message">
+    </div>
+    
     <h2>Message</h2> {{main.message}}
+
+    <h2>List</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Color</td>
+          <td>Nerd</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="computer in main.computers">
+          <td>{{computer.name}}</td>
+          <td>{{computer.color}}</td>
+          <td>{{computer.nerdness}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+
   </div>
-
-  <h2>List</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Color</td>
-        <td>Nerd</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="computer in main.computers">
-        <td>{{computer.name}}</td>
-        <td>{{computer.color}}</td>
-        <td>{{computer.nerdness}}</td>
-      </tr>
-    </tbody>
-
-  </table>
 
 </body>
 
