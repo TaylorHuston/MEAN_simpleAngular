@@ -7,10 +7,10 @@ angular.module('firstApp', [])
   var vm = this;
   vm.message = "Hey There";
   vm.computers = [
-    { name: 'Macbook Pro', color: 'Silver', nedness: 7}
-    { name: 'Yoga 2 Pro', color: 'Gray', nedness: 6},
-    { name: 'Chromebook', color: 'Black', nedness: 5}
-  ]
+    { name: 'Macbook Pro', color: 'Silver', nerdness: 7},
+    { name: 'Yoga 2 Pro', color: 'Gray', nerdness: 6},
+    { name: 'Chromebook', color: 'Black', nerdness: 5}
+  ];
   
   
 });
